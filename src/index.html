@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet" />
+    <title>Drum Kit</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+
+  <body>
+    <div class="page-container">
+      <header class="header-container">
+        <p>Press the letters on your keyboard to play a sound!</p>
+      </header>
+      <main class="main-container">
+        <div class="grid-container">
+          <!-- tuk -->
+          <div data-key="72" class="key grid-item-1 js-key">
+            <small>h</small>
+            <small class="main-sound">tuk</small>
+            <div class="key-bg-opacity"></div>
+          </div>
+          <!-- snare -->
+          <div data-key="74" class="key grid-item-2 js-key">
+            <small>j</small>
+            <small class="main-sound">snare</small>
+            <div class="key-bg-opacity"></div>
+          </div>
+          <!-- clap -->
+          <div data-key="75" class="key grid-item-3 js-key">
+            <small>k</small>
+            <small class="main-sound">clap</small>
+            <div class="key-bg-opacity"></div>
+          </div>
+          <!-- floortom -->
+          <div data-key="76" class="key grid-item-4 js-key">
+            <small>l</small>
+            <small class="main-sound">tom</small>
+            <div class="key-bg-opacity"></div>
+          </div>
+          <!-- ride -->
+          <div data-key="85" class="key grid-item-5 js-key">
+            <small>u</small>
+            <small class="main-sound">ride</small>
+            <div class="key-bg-opacity"></div>
+          </div>
+          <!-- crash -->
+          <div data-key="73" class="key grid-item-6 js-key">
+            <small>i</small>
+            <small class="main-sound">crash</small>
+            <div class="key-bg-opacity"></div>
+          </div>
+          <!-- hihat -->
+          <div data-key="78" class="key grid-item-7 js-key">
+            <small>n</small>
+            <small class="main-sound">hihat</small>
+            <div class="key-bg-opacity"></div>
+          </div>
+          <!-- kick -->
+          <div data-key="77" class="key grid-item-8 js-key">
+            <small>m</small>
+            <small class="main-sound">kick</small>
+            <div class="key-bg-opacity"></div>
+          </div>
+        </div>
+
+        <div class="audio-container">
+          <!-- h -->
+          <audio data-key="72" src="./audio/h-tuk.wav"></audio>
+          <!-- j -->
+          <audio data-key="74" src="./audio/j-snare.wav"></audio>
+          <!-- k -->
+          <audio data-key="75" src="./audio/k-clap.wav"></audio>
+          <!-- l -->
+          <audio data-key="76" src="./audio/l-floortom.wav"></audio>
+          <!-- n -->
+          <audio data-key="78" src="./audio/n-hihat.wav"></audio>
+          <!-- m -->
+          <audio data-key="77" src="./audio/m-kick.wav"></audio>
+          <!-- i -->
+          <audio data-key="73" src="./audio/i-crash.wav"></audio>
+          <!-- u -->
+          <audio data-key="85" src="./audio/u-ride.wav"></audio>
+        </div>
+      </main>
+
+      <footer class="footer-container">
+        <small class="footer-copy">
+          &copy; 2020 Cristina Pontijas
+        </small>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="./js/main.js"></script>
+  </body>
+</html>
