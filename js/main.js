@@ -15,8 +15,12 @@ function playSound(e) {
 
 function paintChange(e) {
   const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
+  function removeChange(e) {
+    if (e.propertyName !== 'transform') return;
+    key.classList.remove('key-playing');
+  }
   const keys = document.querySelectorAll('.key');
-  console.log('array', keys);
+  keys.forEach((key) => key.addEventListener('transitionend', removeChange));
 
   key.classList.add('key-playing');
 }
